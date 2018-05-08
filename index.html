@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="utf-8"> 
+    <title>Portfolio UI/UX Designer</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width">   
+</head>
+<body>
+    <header class="page-header">
+        <a href="index.html" title="Go back to homepage" class="page-logo">Logo</a>
+        <nav id="page-nav">
+            <label id="hamburger" for="toggle">&#9776;</label>
+            <input id="toggle" type="checkbox" />
+            <ul>
+                <li><a href="#">START</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills-workflow">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+<article>
+    <header id="article-header">
+        <h2>May I introduce myself</h2>
+        <p>Frontend Design | UI/UX Design</p>
+        <a href="#about"><button id="header-button">GO AHEAD<a/></button></a>
+    </header>
+        <div id="about">
+            <h3>Raphael Lechner.</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+        </div>
+        <div id="skills-workflow">
+            <div class="skills-container">
+                <img src="img/sketching_is_fun.png" class="sketching">
+                <h5>Sketching is fun</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+            </div>
+            <div class="skills-container">
+                <img src="img/desing_afterwards.png" class="design-afterwards">
+                <h5>Design-afterwards</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+            </div>
+            <div class="skills-container">
+                <img src="img/finalize.png" class="finalize">
+                <h5>Finalize</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+            </div>
+        </div>
+        <div id="gallery">
+            <div class="wrap-img">
+                <figure class="col">
+                    <i class="magnifier fas fa-search"></i>
+                    <div class="gradient">
+                        <img src="img/img-1.png">
+                    </div>
+                    <div class="wrap-figure">
+                        <h6>Lorem ipsum dolor sit</h6> 
+                        <figcaption>amet, consetetur sadipscing elitr</figcaption>
+                    </div>
+                </figure>
+                <figure class="col">
+                    <i class="magnifier fas fa-search"></i>
+                    <div class="gradient">
+                        <img src="img/img-2.png">
+                    </div>
+                    <div class="wrap-figure">
+                        <h6>Lorem ipsum dolor sit</h6> 
+                        <figcaption>amet, consetetur sadipscing elitr</figcaption>
+                    </div> 
+                </figure>
+                <figure class="col">
+                    <i class="magnifier fas fa-search"></i>
+                    <div class="gradient">
+                        <img src="img/img-3.png">
+                    </div> 
+                    <div class="wrap-figure">
+                        <h6>Lorem ipsum dolor sit</h6> 
+                        <figcaption>amet, consetetur sadipscing elitr</figcaption>
+                    </div> 
+                </figure>
+                <figure class="col">
+                    <i class="magnifier fas fa-search"></i>
+                    <div class="gradient">
+                        <img src="img/img-4.png">
+                    </div> 
+                    <div class="wrap-figure">
+                        <h6>Lorem ipsum dolor sit</h6> 
+                        <figcaption>amet, consetetur sadipscing elitr</figcaption>
+                    </div> 
+                </figure> 
+            </div>
+            <button id="gallery-button">VIEW MORE <i class="gallery-button-arrow fas fa-long-arrow-alt-right"></i></button>
+        </div>
+        <div id="contact">
+            <h1>Get in touch!</h1>  
+            <from>
+                <input class="form-name" placeholder="Name" type="text" >
+                <input class="form-email" placeholder="Email" type="email">
+                <textarea class="form-message" placeholder="How can I help You?"></textarea>
+            </from>
+        </div>
+    </article>
+    <footer class="page-footer">
+        <div class="social">
+            <a href=""><img src="img/twitter.png"></a>
+            <a href=""><img src="img/dribbble.png"></a>
+            <a href=""><img src="img/facebook.png"></a>
+        </div>
+        <div class="footer-info">
+            <small>&copy; Raphael Lechner</small>
+            <small>Imprint</small>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

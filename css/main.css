@@ -1,0 +1,465 @@
+body, html{
+    margin: 0;
+    padding: 0; 
+    font-size: 54.5%;
+    /* I changed the standard font size (62.5%) for html because I think it was a little big and the current one is better for RWD */
+}
+
+.page-header{
+    position: absolute;   
+    box-sizing: border-box;
+    width: 100%;  
+}
+
+#hamburger, #toggle{
+    display: none;   
+}
+
+#page-nav ul{
+    position: relative;
+    float: right;
+    margin: 55px 120px 0 0;
+    padding: 0; 
+}
+
+#page-nav ul li{
+    display: inline-block;   
+}
+
+#page-nav ul li:first-child a:first-child{
+    border-bottom: 2px solid;  
+}
+
+#page-nav ul li a{
+    font-size: 1.9rem;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 15px;   
+}
+
+#page-nav ul li a:hover{
+    color: #1ABC9C;
+}
+
+.page-logo{ 
+    font-size: 2.0rem;
+    font-family: 'PT Sans', sans-serif;
+    color:#FFF;
+    text-decoration: none;
+    position: absolute;
+    margin: 55px 0 0 120px;    
+}
+
+#article-header{
+    box-sizing: border-box;
+    padding-top: 230px;
+    height: 500px;
+    background: linear-gradient(
+        rgba(226, 151, 145, 0.3), 
+        rgba(226, 151, 145, 0.3)), 
+        url(../img/background.png);
+    background: -o-linear-gradient(
+        rgba(226, 151, 145, 0.3), 
+        rgba(226, 151, 145, 0.3)), 
+        url(../img/background.png); /* for Opera */
+    background-size: cover;
+    background-position: 50%; 
+    text-align: center;
+}
+
+#article-header h2{
+    font-size: 6.0rem;
+    font-family: 'Rokkitt', serif;
+    color: #FFF;
+    display: inline;
+    margin: 0 auto 0 auto;
+    padding: 0 40px;
+    border-bottom: 1px solid #FFF;
+}
+
+#article-header p{
+    font-size: 2.2rem;
+    font-family: 'Rokkitt', serif;
+    color: #FFF;
+}
+
+#header-button{
+    position: absolute;
+    height: 46px;
+    width: 206px;
+    top: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #1ABC9C;
+    border: 6px solid rgba(26, 188, 156, .75);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+#article-header a{
+    font-family: 'Rokkitt', serif;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color:#FFF;   
+}
+
+#about{
+    font-family: 'PT Sans', sans-serif;
+    margin: 150px 216px 0 216px;
+    text-align: center;   
+    
+}
+
+#about h3{
+    font-size: 3.6rem;
+    color: #1ABC9C;
+    text-align: center;  
+}
+
+#about p{
+    font-size: 1.8rem;
+    color: #95A5A6;
+    max-width: 768px;
+    margin: auto;  
+}
+
+#skills-workflow{
+    display: -webkit-box; /* webkit (safari, chrome) browsers */
+    display: -ms-flexbox; /* IE10+ */
+    display: flex;
+    overflow: hidden;
+    margin: 70px auto 0 auto;
+    max-width: 960px;
+    justify-content: space-between;
+    -webkit-box-pack: justify; /* webkit (safari, chrome) browsers */
+    -ms-flex-pack: justify; /* IE10+ */
+}
+
+.skills-container{  
+    font-family: 'PT Sans', sans-serif;
+    max-width: 200px;  
+    padding: 10px 2% 10px 2%;
+    text-align: center;    
+}
+
+.skills-container h5{
+    font-size: 2.0rem;
+    color: #1ABC9C;
+}
+
+.skills-container p{ 
+    font-size: 1.5rem;
+    color: #95A5A6;
+    text-align: justify;
+}
+
+#gallery{
+    margin: 150px 120px 0 120px;
+    padding: 0; 
+}
+
+#gallery .wrap-img{
+    display: -webkit-box; /* webkit (safari, chrome) browsers */
+    display: -ms-flexbox; /* IE10+ */
+    display: -moz-box; /* mozilla browsers */
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    max-width: 1100px;
+    margin: 0 auto; 
+    justify-content: space-around;
+    list-style: none;
+}
+
+#gallery .wrap-img figure .gradient img {
+    position: relative;
+    z-index: -1; 
+}
+
+#gallery .wrap-img figure figcaption{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #297465;
+    position: relative;
+    top: -20px;
+    margin-left: 20px;  
+}
+
+#gallery .wrap-img figure h6{
+    font-family: 'Rokkitt', serif;
+    font-size: 3rem;
+    color: #FFF;
+    position: relative;
+    top: -25px;
+    margin: 0 0 0 20px;
+}
+
+.wrap-figure{
+    position: absolute;
+    width: 100%;
+    padding-top: 43px;
+    margin-top: -96px;
+    margin-bottom: 10px;
+    background-color: #1ABC9C;
+    border-top: 6px solid rgba(26, 188, 156, .75); 
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    display: none;
+    overflow: hidden;
+}
+
+#gallery .wrap-img figure{
+    position: relative;
+    margin: 0 0 50px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.magnifier{
+    position: absolute;
+    font-size: 10px; 
+    color: #FFF;
+    background-color: #1ABC9C;
+    top: 5%;
+    left: 87%;
+    padding: 10px;
+    display: none;
+    transform: translate(-50% -50%);
+    -webkit-transform: rotateY(180deg); /* for Safari */
+    -moz-transform: rotateY(180deg); /* mozilla browsers */
+    -o-transform: rotateY(180deg); /* for Opera */
+    -ms-transform: rotateY(180deg); /* IE10+ */
+    border: 6px solid rgba(26, 188, 156, .50); 
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.gradient{  
+    background: linear-gradient(to bottom, rgba(227,130,121,0) 0%,rgba(227,130,121,0.2) 0%);
+    background: -o-linear-gradient(top, rgba(227,130,121,0) 0%,rgba(227,130,121,0.2) 0%);
+    /* for Opera */
+}
+
+figure:hover .wrap-figure, figure:hover .magnifier{
+    display: block; 
+}
+
+figure:hover .gradient{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%); /* for Opera */
+}
+
+#gallery-button{
+    font-family: 'Rokkitt', serif;
+    font-size: 2.4rem;
+    color: #FFF;
+    background-color: #1ABC9C; 
+    height: 48px;
+    width: 200px;
+    border-width: 0px;
+    margin: 70px auto 0 auto;
+    display: table;
+    cursor: pointer;
+}
+
+#gallery-button-arrow{
+    position: relative;
+    font-size: 3.0rem;
+    color: white;  
+    top: 3px;
+    padding-left: 8px;  
+}
+
+#contact h1{
+    font-family: 'Rokkitt', serif;
+    font-size: 6.0rem;
+    color: #1ABC9C;
+    text-align: center;
+}
+
+#contact{
+    margin: 150px 216px 0 216px;  
+}
+
+#contact from{
+    max-width: 768px;
+    margin: auto;
+    display: block;
+}
+
+#contact input{
+    font-family: 'Rokkitt', serif;
+    font-size: 3rem;
+    background-color: #E4E8E8;
+    width: 48%;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    border: 0px;
+    box-sizing: border-box;
+    display: inline-block;  
+}
+
+#contact textarea{ 
+    font-family: 'Rokkitt', serif;
+    font-size: 3rem;
+    background-color: #E4E8E8;
+    width: 100%;
+    height: 250px;
+    padding: 10px 0 10px 15px;
+    border: 0px;
+    resize: none;
+    box-sizing: border-box;   
+}
+
+.form-name{
+    float: left;
+}
+
+.form-email{
+    float: right;
+}
+
+#contact input::placeholder, #contact textarea::placeholder{
+    color: #CECECE;
+}
+
+#contact input:focus, #contact textarea:focus{
+    outline: none;
+}
+
+.page-footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    bottom: 0;
+    background-color: #1ABC9C;
+}
+
+.page-footer .social{
+    position: relative;
+    display: -webkit-box; /* webkit (safari, chrome) browsers */
+    display: -ms-flexbox; /* IE10+ */
+    display: flex;
+    top: -30px;
+    flex-direction: row;
+    margin: 0 216px 0 216px;
+    -webkit-box-pack: justify; /* webkit (safari, chrome) browsers */
+    -ms-flex-pack: justify; /* IE10+ */
+    justify-content: space-between;
+}
+
+.page-footer .social img{
+    background-color: white;
+    border: 7px solid rgba(26, 188, 156, .6); 
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.footer-info{
+    font-family: 'Rokkitt', serif;
+    font-size: 2.4rem;
+    color: #FFF;
+    position: relative;
+    top: 35px;
+    margin: 0 120px; 
+}
+
+.footer-info small:first-child{
+    float: left;
+}
+.footer-info small:last-child{
+    float: right;
+}
+
+@media only screen and (max-width: 768px){
+    #hamburger{
+        color: white;
+        font-size: 26px;
+        position: absolute;
+        right: 20px;
+        margin-top: 10px;
+        display: inline-block;
+        z-index: 1;
+        cursor: pointer;
+        -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+        -moz-user-select: none; /* mozilla browsers */
+        -khtml-user-select: none; /* webkit (konqueror) browsers */
+        -ms-user-select: none; /* IE10+ */
+    }
+    
+    .page-logo{
+        margin-left: 20px;
+        margin-top: 14px;
+        z-index: 1;    
+    }
+    
+   #page-nav ul{
+       position: relative;
+       width: 100%;
+       margin: 0;
+       padding: 35px 0 0 0;
+       background-color:#F2C2BE;
+       opacity:0.8;
+       text-align: center;
+       display: none;  
+    }
+    
+    #page-nav ul li {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #EAEAEB;   
+    }
+    
+    #toggle:checked + ul {
+        display: block;
+    }
+    
+    #article-header{
+        padding-top: 130px;
+    }
+    
+    #article-header h2{
+        padding: 0;
+    }
+    
+    #about{
+        margin: 150px 30px 0 30px;
+    }
+    .gradient img, .gradient{
+        width: 300px;
+    }
+    
+    figure:hover .magnifier{
+        display: none;    
+    }
+    
+    #gallery{
+        margin: 100px auto 0 auto;
+    }
+    
+    #contact{
+        margin: 150px 10px 0 10px;    
+    }
+    
+    #contact input{
+        width: 100%;
+    }
+    .page-footer .social{
+        margin: 0 10px;
+        justify-content: center;   
+    }
+    .footer-info{
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #skills-workflow{
+        display: block;
+    }
+    .skills-container{
+        margin: auto;
+    }
+}
